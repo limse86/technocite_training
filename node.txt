@@ -1,0 +1,34 @@
+install Brew //
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Node JS //
+
+brew install node
+
+brew install zsh
+
+GitHub//
+
+brew install git
+
+----------------------
+
+npm install -g nodemon
+
+
+si msg ERROR sudo chmod -R 777 /usr/local/ et relancer nodemon
+
+------------------------
+
+//creer un dossier
+
+mkdir nomdudossier
+
+
+
+------------------------
+
+//crer un fichier json avec les infos du node
+
+ntm init

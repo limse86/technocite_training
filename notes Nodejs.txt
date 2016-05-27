@@ -1,0 +1,65 @@
+===========
+: NODE JS :
+===========
+installer dernière version de Node js 6.2.0
+
+Afficher la version de node
+node -v
+
+Afficher la version de npm
+npm -v
+
+Installer nodemon pour toute la machine [-g]
+npm install -g nodemon
+	nodemon est un moniteur de code [cf www.nodemon.io]
+	
+créer un nouveau projet:
+	dans le dossier du projet:
+		npm init
+
+Installer un nouveau package:
+	npm install nomDuPackage --save
+	=> permet d'ajouter les infos du package dans les fichiers d'info du projet pour pouvoir les retrouver après si on envoie sur git [sans les modules] et qu'on les récupère
+
+=======
+: GIT :
+=======
+initialise [dans le dossier du projet] quand on crée le projet
+git init
+
+affiche le statut des synchronisations avec git
+git status
+
+faire un fichier .gitignore dans lequel on met les fichiers qu'on veut pas uploader
+
+Préparer à envoyer un seul fichier/dossier
+git add nomdufichier
+
+préparer à envoyer tous les dossiers/fichiers qui ne sont pas répertoriés dans le .gitignore
+git add . --all
+
+Envoie les fichiers préparés
+git commit -m"First commit"
+
+affiche les logs du dossier
+git log
+
+Si c'est pas un nouveau projet github:
+======================================
+Récupérer les dernières modifs faites sur les fichiers du répertoire
+git pull
+
+	Si souci => on refait 1 commit avec un commentaire "merge ..."
+	
+Après le git pull, on envoie sur le serveur
+git push
+
+Si c'est un nouveau projet GitHub:
+==================================
+Paramètrer le dossier pour qu'il soit synchro avec le dossier github
+git remote add origin https://github.com/adresseDuCompteGit
+git push -u origin master
+
+Récupérer un projet existant sur une nouvelle machine:
+======================================================
+git clone https://github.com/adresseDuCompteGit
