@@ -1,14 +1,11 @@
 {
-    "friends":[
-        {
-            "_id":1,
-            "name":"vincent",
-            "email":"vincent@triptyk.eu"
-        }, {
-            "_id":2,
-            "name":"stéphane",
-            "email":"stéphane@triptyk.eu"
-        }
-    ]
-    
+    "friends": [{
+        "id": 3,
+        "name": "louis",
+        "email": "truc@triptyk.eu"
+    }, {
+        "id": 4,
+        "name": "truc",
+        "email": "truc@triptyk.eu"
+    }]
 }

@@ -1,0 +1,29 @@
+{
+<<<<<<< HEAD
+  "name": "exe11",
+  "version": "0.0.1",
+  "description": "use mongooose",
+  "main": "www.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Limse86",
+=======
+  "name": "exe10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+>>>>>>> 337c2f520e41227a04e4e94a35c8ce7363d19056
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.13.4",
+    "lodash": "^4.13.1",
+    "mongodb": "^2.1.21",
+    "mongoose": "^4.4.19"
+  }
+}

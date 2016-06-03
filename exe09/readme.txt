@@ -1,0 +1,122 @@
+use companies
+db.companies.insert(
+[{
+    "name":"microsoft",
+    "address":{
+       "street":"rue de l'étang",
+       "number":1450,
+       "cp":2000,
+       "town":"san-francisco",
+       "country":"usa"
+    },
+    "finacial_data":{
+        "turnover":100000,
+        "employees":2500
+    },
+    "creation_year":1982
+},{
+    "name":"apple",
+    "address":{
+       "street":"rue de microsoft",
+       "number":28,
+       "cp":1000,
+       "town":"san-francisco",
+       "country":"usa"
+    },
+    "finacial_data":{
+        "turnover":200000000,
+        "employees":250000
+    },
+    "creation_year":1998
+},{
+    "name":"bservices",
+    "address":{
+       "street":"rue de initialis",
+       "number":8,
+       "cp":7000,
+       "town":"mons",
+       "country":"belgium"
+    },
+    "finacial_data":{
+        "turnover":560000,
+        "employees":10
+    },
+    "creation_year":2007
+},{
+    "name":"uservices",
+    "address":{
+       "street":"rue de la loi",
+       "number":2,
+       "cp":7000,
+       "town":"mons",
+       "country":"belgium"
+    },
+    "finacial_data":{
+        "turnover":20000,
+        "employees":2
+    },
+    "creation_year":2005
+},{
+    "name":"bizzm",
+    "address":{
+       "street":"rue d'antoing",
+       "number":54,
+       "cp":7500,
+       "town":"tournai",
+       "country":"belgique"
+    },
+    "finacial_data":{
+        "turnover":1000000,
+        "employees":25
+    },
+    "creation_year":2004
+},
+{
+    "name":"technocite",
+    "address":{
+       "street":"rue Henry",
+       "number":7,
+       "cp":2015,
+       "town":"hornu",
+       "country":"belgium"
+    },
+    "finacial_data":{
+        "turnover":800000,
+        "employees":12
+    },
+    "creation_year":1994
+},
+{
+    "name":"Web2clef",
+    "address":{
+       "street":"rue de tachi",
+       "number":28,
+       "cp":7080,
+       "town":"frameries",
+       "country":"belgium"
+    },
+    "finacial_data":{
+        "turnover":400000,
+        "employees":1
+    },
+    "creation_year":2000
+},
+{
+    "name":"copilot",
+    "address":{
+       "street":"rue de bavay",
+       "number":250,
+       "cp":77000,
+       "town":"bavay",
+       "country":"france"
+    },
+    "finacial_data":{
+        "turnover":1200000,
+        "employees":11
+    },
+    "creation_year":2003
+}])
+db.companies.find({"address.country":"belgium"})
+db.companies.find({"finacial_data.turnover":{"$gt":500000}})
+db.companies.find({"finacial_data.employees":{"$lt":20}})
+db.companies.find({"creation_year":{"$gt":1999,"$lt":2010}})

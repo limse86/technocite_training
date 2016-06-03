@@ -1,12 +1,12 @@
 {
   "name": "exe03",
   "version": "0.0.1",
-  "description": "NodeJs - Exercice 03",
-  "main": "searchweb.js",
+  "description": "exercice 3 du cours de technocite",
+  "main": "searchTheWeb.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Selim",
+  "author": "TCDP",
   "license": "ISC",
   "dependencies": {
     "cheerio": "^0.20.0"

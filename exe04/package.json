@@ -1,12 +1,13 @@
 {
   "name": "mywebsite",
   "version": "0.0.1",
-  "description": "Ce site est un site permettant de tester les fonctionnalités d'expressJs",
+  "description": "ce site est un site permettant de tester les fonctionnalités d'expressjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
   },
-  "author": "Selim Martin-Bejar",
+  "author": "TCDP",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
